@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #3d7ef4;
+  background: url(../img/bg.png);
+  background-size: cover;
+  position: relative; }
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png);
+  background-size: cover; }
+
+.table_outer {
+  margin: 0;
+  position: absolute;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8); }
+
+.table {
+  position: relative;
+  margin: 0 auto;
+  width: 1076px;
+  height: 646px;
+  mix-blend-mode: screen;
+  transition: all .8s ease-in-out; }
+  .table .element {
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 56px;
+    height: 61px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: top;
+    text-align: center;
+    opacity: 0; }
+    .table .element.team {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.6);
+      border: 2px solid rgba(255, 255, 255, 0);
+      color: black;
+      opacity: 1; }
+      .table .element.team .detail {
+        z-index: 1000;
+        position: absolute;
+        border-radius: 5px;
+        top: -2px;
+        left: calc(100% + 6px);
+        width: 416px;
+        min-height: 140px;
+        background: rgba(255, 255, 255, 0.95);
+        text-align: left;
+        pointer-events: none;
+        opacity: 0;
+        transition: all .5s linear;
+        padding: 24px;
+        color: black; }
+        .table .element.team .detail hr {
+          margin: 0 0 12px; }
+        .table .element.team .detail.right {
+          left: calc(-414px - 8px); }
+        .table .element.team .detail h1 {
+          color: black;
+          text-align: left;
+          text-transform: uppercase;
+          margin: 0;
+          font-size: 20px;
+          margin-bottom: 12px;
+          font-weight: 600; }
+        .table .element.team .detail h2 {
+          text-transform: uppercase;
+          margin: 0;
+          text-transform: uppercase;
+          font-size: 16px; }
+        .table .element.team .detail p {
+          font-size: 14px;
+          margin-top: 0; }
+          .table .element.team .detail p:last-child {
+            margin-bottom: 0; }
+      .table .element.team:hover {
+        opacity: 1;
+        z-index: 5000;
+        background: white; }
+        .table .element.team:hover .detail {
+          display: block;
+          opacity: 1;
+          padding: 24px; }
+      .table .element.team.active {
+        background: white; }
+    .table .element .number {
+      position: absolute;
+      font-size: 7px;
+      top: 2px;
+      left: 4px; }
+    .table .element .symbol {
+      margin-top: 15px;
+      font-size: 1.5em;
+      font-weight: 700; }
+    .table .element .name {
+      font-size: 5px;
+      line-height: 8.5px;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .table .element.team .name {
+      display: block; }
+    .table .element .weight {
+      font-size: .3em;
+      font-weight: light;
+      display: none; }
+  .table.fade .element {
+    opacity: .5; }

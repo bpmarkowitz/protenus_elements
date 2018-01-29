@@ -1,0 +1,100 @@
+{
+    "teams": [
+        {
+            "name": "Hydrogen",
+            "number": 1,
+            "desc": "Product team responsible for the accuracy of Alert Generator portion of privacy monitoring platform. Hydrogen is a reactive element off of the carbon backbone.",
+            "kpis": ["false positives", "alerts generated", "accuracy"],
+            "lead": "Dan Zou",
+            "members": ["Cosme Adrover","Ellen Ambrose","John Babb","Cary Maister","Fazal Mahate","Chris Jeschke","Erem Kazancioglu"]
+        },
+        {
+            "name": "Helium",
+            "number": 2,
+            "desc": "Marketing team responsible for high-level thought leadership, brand awareness, lead-generation, and other marketing operations.",
+            "kpis": ["# of requests for demos"],
+            "lead": "Nicholas Culbertson",
+            "members": ["Kira Caban, Chris Tate, Stacy McCloskey, Robert Lord, Olga Brillman, Julian Haddad"]
+        },
+        {
+            "name": "Carbon",
+            "number": 6,
+            "desc": "Product team responsible for the Protenus platform, aka Graphene, an indefinitely large atomic lattice that integrate multiple data feeds into one, advanced big-data platform for the purpose of all other product activities.",
+            "kpis": ["# of records protected","# of users monitored","# of live data feeds"],
+            "lead": "Chris Jeschke",
+            "members": ["Dave Handy", "Bill Streckfus", "Brian Reavey", "Dan Dutrow", "Cary Maister", "Fazal Mahate", "Alexander K. Baca", "Eric Southern", "Ethan Wolkowicz"]
+        },
+        {
+            "name": "Nitrogen",
+            "number": 7,
+            "desc": "Ops team responsible for security, privacy, and compliance at Protenus - an inert, tasteless, odorless, gas.",
+            "kpis": ["# of security incidents", "compliance score"],
+            "lead": "Chris Jeschke",
+            "members": ["Brian Reavey", "Ethan Wolkowicz", "Christa White", "Nicholas Culbertson"]
+        },
+        {
+            "name": "Oxygen",
+            "number": 8,
+            "desc": "Sales team responsible for closing as many deals as possible and generating the life-source of protenus.",
+            "kpis": ["Annual recurring revenue", "aggregate total contract value", "# of customers signed"],
+            "lead": "Nicholas Culbertson",
+            "members": ["Stacey Davis", "Robert Lord", "Wendy Lewis", "Stacy McCloskey", "Cate Stanton", "Susan Galzerano"]
+        },
+        {
+            "name": "Silicon",
+            "number": 14,
+            "desc": "Product team leader element responsible for connectivity of all privacy monitoring related products (Carbon, Copper, Gold, etc.).",
+            "kpis": ["&mdash;"],
+            "lead": "Nicholas Culbertson",
+            "members": ["Chris Jeschke", "Dan Zou", "Cosme Adrover", "Brian Reavey", "Ben Markowitz", "Chris Tate"]
+        },
+        {
+            "name": "Copper",
+            "number": 29,
+            "desc": "Customer support team responsible for end-user engagement, training, support, and customer satisfaction.",
+            "kpis": ["Issue resolution time", "end-user satisfaction", "PANDAs attendance"],
+            "lead": "Christa White",
+            "members": ["Andrea Belmore", "Margy Culbertson", "Nicholas Culbertson"]
+        },
+        {
+            "name": "Zinc",
+            "number": 30,
+            "desc": "Product implementation team responsible for installing new product instances with new customers and coordinating new data integrations.",
+            "kpis": ["Implementation Time"],
+            "lead": "Alexander K. Baca",
+            "members": ["&mdash;"]
+        },
+        {
+            "name": "Rhodium",
+            "number": 45,
+            "desc": "Research team responsible for novel data science applications of the Protenus platform",
+            "kpis": ["New analytics developed"],
+            "lead": "Dan Zou",
+            "members": ["Cosme Adrover", "Ellen Ambrose", "John Babb", "Cary Maister", "Erem Kazancioglu", "Chris Jeschke"]
+        },
+        {
+            "name": "Tungsten",
+            "number": 74,
+            "desc": "Leadership team responsible for strategic operations at Protenus.",
+            "kpis": ["Cash flow", "bank balance"],
+            "lead": "Nicholas Culbertson",
+            "members": ["Robert Lord", "Chris Jeschke", "Chris Tate", "Stacey Davis", "Olga Brillman"]
+        },
+        {
+            "name": "Gold",
+            "number": 79,
+            "desc": "Product team responsible for the shiny, invaluable front-end application of privacy monitoring solution.",
+            "kpis": ["&mdash;"],
+            "lead": "Chris Tate",
+            "members": ["Ben Markowitz", "Mike Tierney", "Dave Handy", "Bill Streckfus", "Christa White", "Christine Leverett"]
+        },
+        {
+            "name": "Meitnerium",
+            "number": 109,
+            "desc": "Women's Professional Group at Protenus.",
+            "kpis": ["Group satisfaction"],
+            "lead": "&mdash;",
+            "members": ["Any female team members at Protenus."]
+        }
+    ]
+}

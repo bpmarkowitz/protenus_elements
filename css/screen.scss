@@ -1,0 +1,189 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: rgb(61, 126, 244);
+  background: url(../img/bg.png);
+  background-size: cover;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png);
+  background-size: cover;
+}
+
+.table_outer {
+  margin: 0;
+  position: absolute;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color:rgba(white,.8);
+}
+
+.table {
+  position: relative;
+  margin: 0 auto;
+  width: 1076px;
+  height: 646px;
+  // overflow: hidden;
+  mix-blend-mode: screen;
+  transition: all .8s ease-in-out;
+  // transform: scale(.8,.8);
+
+  .element {
+    border-radius: 5px;
+    color:rgba(white,.8);
+    border: 2px solid rgba(white,.1);
+    width: 56px;
+    height: 61px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: top;
+    text-align: center;
+    opacity: 0;
+    // transition: width .2s, height .2s;
+
+    &.team {
+      cursor: pointer;
+      background: rgba(white,.6);
+      border: 2px solid rgba(white,0);
+      color: black;
+      opacity: 1;
+
+      .detail {
+        z-index: 1000;
+        position: absolute;
+        border-radius: 5px;
+        top: -2px;
+        left: calc(100% + 6px);
+        width: 416px;
+        min-height: 140px;
+        background: rgba(white, .95);
+        text-align: left;
+        pointer-events: none;
+        opacity: 0;
+        transition: all .5s linear;
+        padding: 24px;
+        color: black;
+
+        hr {
+          margin: 0 0 12px;
+        }
+
+
+        &.right {
+          left: calc(-414px - 8px);
+        }
+
+        h1 {
+          color: black;
+          text-align: left;
+          text-transform: uppercase;
+          margin: 0;
+          font-size: 20px;
+          margin-bottom: 12px;
+          font-weight: 600;
+        }
+
+        h2 {
+          text-transform: uppercase;
+          margin: 0;
+          text-transform: uppercase;
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 14px;
+          margin-top: 0;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+        z-index: 5000;
+        background: rgba(255,255,255,1);
+
+        .detail {
+          display: block;
+          opacity: 1;
+          padding: 24px;
+        }
+      }
+
+
+
+      &.active {
+        background: rgba(255,255,255,1);
+        // box-shadow: 0px 0px 20px rgba(255,255,255,.5);
+      }
+    }
+
+    .number {
+      position: absolute;
+      font-size: 7px;
+      top: 2px;
+      left: 4px;
+    }
+
+    .symbol{
+      margin-top: 15px;
+      font-size: 1.5em;
+      font-weight: 700;
+
+    }
+
+    .name {
+      font-size: 5px;
+      line-height: 8.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+    }
+
+    &.team .name {
+      display: block;
+    }
+
+    .weight {
+      font-size: .3em;
+      font-weight: light;
+      display: none;
+    }
+  }
+
+
+
+
+
+  &.fade .element {
+    opacity: .5;
+  }
+}
